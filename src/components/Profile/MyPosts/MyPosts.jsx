@@ -12,11 +12,10 @@ const MyPosts = (props) => {
         <button>Remove</button>
       </div>
       <div className={s.posts}>
-        <Post message="Hi, how are you?" />
-        <Post message="It's my first post" />
-        <Post message="Good! Good!" />
-        <Post message="Fine! Fine!" />
-        <Post />
+        <Post message="Hi, how are you?" likesCount="2" />
+        <Post message="It's my first post" likesCount="23" />
+        <Post message="Good! Good!" likesCount="15" />
+        <Post message="Fine! Fine!" likesCount="9" />
       </div>
     </div>
   );
