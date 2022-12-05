@@ -7,12 +7,12 @@
   color: white;
   font-weight: bold;
   margin: 15px;
+  text-decoration: none;
 }
 
-.item.active {
-  color: gold;
-}
-
-.item.active a {
-  color: white;
+.active {
+  color: black;
+  font-weight: bold;
+  margin-left: 20px;
+  text-decoration: none;
 }
