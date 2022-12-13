@@ -3,13 +3,17 @@ import s from "./MyPosts.module.css";
 import Post from "./Post/Post";
 
 const MyPosts = (props) => {
-  let postData = [
+  let posts = [
     { id: 1, message: "My Post 1", likesCount: 12 },
     { id: 2, message: "My Post 2", likesCount: 11 },
     { id: 3, message: "My Post 3", likesCount: 8 },
     { id: 4, message: "My Post 4", likesCount: 15 },
     { id: 5, message: "My Post 5", likesCount: 32 },
   ];
+
+  let postsElements = posts.map((p) => (
+    <Post message={p.message} likesCount={p.likesCount} />
+  ));
 
   return (
     <div className={s.postsBlock}>
@@ -23,28 +27,7 @@ const MyPosts = (props) => {
         </div>
         <button>Remove</button>
       </div>
-      <div>
-        <Post
-          message={postData[0].message}
-          likesCount={postData[0].likesCount}
-        />
-        <Post
-          message={postData[1].message}
-          likesCount={postData[1].likesCount}
-        />
-        <Post
-          message={postData[2].message}
-          likesCount={postData[2].likesCount}
-        />
-        <Post
-          message={postData[3].message}
-          likesCount={postData[3].likesCount}
-        />
-        <Post
-          message={postData[4].message}
-          likesCount={postData[4].likesCount}
-        />
-      </div>
+      <div>{postsElements}</div>
     </div>
   );
 };
