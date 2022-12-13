@@ -1,5 +1,12 @@
-.content {
-    grid-area: c;
-    background-color: cornflowerblue;
-    width: 100%;
-  }
+div > img {
+  border-radius: 50%;
+  width: 150px;
+}
+
+.postsBlock {
+  padding: 10px;
+}
+
+.posts {
+  margin-top: 10px;
+}
